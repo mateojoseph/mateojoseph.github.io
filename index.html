@@ -657,6 +657,8 @@
     .work-card:hover .work-card-thumb-placeholder { transform: scale(1.04); }
     .placeholder-quantum { background: linear-gradient(135deg, #1a1a2e 0%, #2d1b4e 50%, #1a1a3e 100%); }
     .placeholder-kim { background: linear-gradient(135deg, #1a1520 0%, #2a1f35 50%, #1a1525 100%); }
+    .placeholder-naomi { background: linear-gradient(135deg, #0f1a1a 0%, #1b3030 50%, #0f1a1a 100%); }
+    .placeholder-robert { background: linear-gradient(135deg, #1a150f 0%, #2e2010 50%, #1a150f 100%); }
     .placeholder-icon {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 4rem;
@@ -1061,7 +1063,10 @@
       </div>
 
       <div class="work-card reveal" onclick="openModal('naomi')">
-        <img class="work-card-thumb" src="naomi_ad.png" alt="Naomi Thurston Print Ad" />
+        <div class="work-card-thumb-placeholder placeholder-naomi">
+          <div class="placeholder-icon">NT</div>
+          <div class="placeholder-label">Luxury Agent Print Ad</div>
+        </div>
         <div class="work-card-type-badge">
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
           Print Ad
@@ -1092,7 +1097,10 @@
       </div>
 
       <div class="work-card reveal" onclick="openModal('robert')">
-        <img class="work-card-thumb" src="robert_testimonial.png" alt="Robert Mexquitic Social Testimonial" />
+        <div class="work-card-thumb-placeholder placeholder-robert">
+          <div class="placeholder-icon">RM</div>
+          <div class="placeholder-label">Social Media Graphic</div>
+        </div>
         <div class="work-card-type-badge">
           <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
           Social
