@@ -659,6 +659,24 @@
     .placeholder-kim { background: linear-gradient(135deg, #1a1520 0%, #2a1f35 50%, #1a1525 100%); }
     .placeholder-naomi { background: linear-gradient(135deg, #0f1a1a 0%, #1b3030 50%, #0f1a1a 100%); }
     .placeholder-robert { background: linear-gradient(135deg, #1a150f 0%, #2e2010 50%, #1a150f 100%); }
+    .placeholder-sales { background: linear-gradient(135deg, #0f1a0f 0%, #1a3020 50%, #0f1a10 100%); }
+    .placeholder-buyer { background: linear-gradient(135deg, #0a0f1a 0%, #102040 50%, #0a0f1a 100%); }
+    .placeholder-recruit { background: linear-gradient(135deg, #1a0f0a 0%, #301510 50%, #1a0f0a 100%); }
+    .placeholder-carpool { background: linear-gradient(135deg, #12101a 0%, #221535 50%, #12101a 100%); }
+
+    /* Reel / video card play button */
+    .play-icon {
+      width: 54px; height: 54px;
+      border: 2px solid rgba(232,255,71,0.5);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      transition: border-color 0.3s, background 0.3s;
+    }
+    .work-card:hover .play-icon {
+      border-color: var(--accent);
+      background: rgba(232,255,71,0.08);
+    }
+    .play-icon svg { margin-left: 4px; }
     .placeholder-icon {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 4rem;
@@ -996,7 +1014,7 @@
             <li>Defined early Instagram brand and content strategy, contributing to <strong style="color:var(--text)">300%+ follower growth</strong></li>
             <li>Pitched and structured 15 short-form video concepts with hooks and intros for competitive gaming audiences</li>
             <li>Produced and evaluated 10 trial short-form videos to validate formats and pacing before wider rollout</li>
-            <li>Established editing style guidelines — cuts, captions, visual rhythm — to maintain brand consistency</li>
+            <li>Established and refined editing style guidelines (cuts, captions, visual rhythm) to maintain brand consistency across posts</li>
           </ul>
         </div>
         <span class="exp-tag">Brand Strategy</span>
@@ -1009,8 +1027,8 @@
           <div class="exp-role">Design & Marketing Intern</div>
           <ul class="exp-bullets">
             <li>Developed short-form video campaigns achieving a <strong style="color:var(--text)">35% higher engagement rate</strong></li>
-            <li>Executed targeted print advertising assets for 5 agents, supporting marketing of <strong style="color:var(--text)">$5M+ in luxury properties</strong></li>
-            <li>Built and standardized 10+ marketing templates adopted by <strong style="color:var(--text)">50 agents</strong> to promote $50M+ in listings</li>
+            <li>Executed targeted print advertising assets for multiple agents, supporting marketing of <strong style="color:var(--text)">$5M+ in luxury properties</strong></li>
+            <li>Built and standardized 10+ marketing templates adopted across the brokerage to promote <strong style="color:var(--text)">$50M+ in listings</strong></li>
             <li>Co-organized multiple property showing events drawing <strong style="color:var(--text)">300+ attendees each</strong>, directly supporting agent engagement and sales pipeline activity</li>
             <li>Launched and hosted the company's <strong style="color:var(--text)">first podcast series</strong> to expand digital reach and engage clients through storytelling</li>
           </ul>
@@ -1026,7 +1044,7 @@
           <ul class="exp-bullets">
             <li>Elevated UT Austin's esports program to <strong style="color:var(--text)">national top 10</strong> after leading program to top 3 finishes across regional tournaments</li>
             <li>Oversaw <strong style="color:var(--text)">20% membership growth</strong> to surpass 1,000 members, resulting in a 50% boost in community engagement</li>
-            <li>Directed event planning efforts for tournaments and community gatherings, attracting <strong style="color:var(--text)">200+ participants</strong></li>
+            <li>Directed event planning efforts for tournaments and community gatherings, attracting <strong style="color:var(--text)">500+ participants</strong></li>
             <li>Acted as the public face of the organization during outreach efforts, events, and collaborations with UT Austin partners</li>
           </ul>
         </div>
@@ -1088,7 +1106,7 @@
         <div class="work-card-info">
           <span class="work-card-tag">Christie's Real Estate · Print Advertising</span>
           <div class="work-card-title">Naomi Thurston</div>
-          <div class="work-card-desc">Luxury agent print ad supporting $105M+ in closed sales — layout, copy, and brand execution</div>
+          <div class="work-card-desc">Luxury agent print ad supporting $105M+ in closed sales</div>
           <button class="work-card-btn">View Ad →</button>
         </div>
       </div>
@@ -1122,8 +1140,85 @@
         <div class="work-card-info">
           <span class="work-card-tag">Christie's Real Estate · Social Media</span>
           <div class="work-card-title">Robert Mexquitic</div>
-          <div class="work-card-desc">Client testimonial graphic — part of a template system adopted by 50+ agents</div>
+          <div class="work-card-desc">Client testimonial graphic, part of a standardized template system adopted by 50+ agents</div>
           <button class="work-card-btn">View Graphic →</button>
+        </div>
+      </div>
+
+      <!-- Buyer Book PDF -->
+      <div class="work-card reveal" onclick="openModal('buyerBook')">
+        <div class="work-card-thumb-placeholder placeholder-buyer">
+          <div class="placeholder-icon">BB</div>
+          <div class="placeholder-label">Buyer Book · 36 Pages</div>
+        </div>
+        <div class="work-card-type-badge">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          PDF · 36 pg
+        </div>
+        <div class="work-card-info">
+          <span class="work-card-tag">Christie's Real Estate · Print & Digital</span>
+          <div class="work-card-title">Buyer Book</div>
+          <div class="work-card-desc">36-page buyer's guide produced for Christie's International Real Estate Lone Star</div>
+          <button class="work-card-btn">View Book →</button>
+        </div>
+      </div>
+
+      <!-- Recruitment Package PDF -->
+      <div class="work-card reveal" onclick="openModal('recruitment')">
+        <div class="work-card-thumb-placeholder placeholder-recruit">
+          <div class="placeholder-icon">RP</div>
+          <div class="placeholder-label">Recruitment Package · 23 Pages</div>
+        </div>
+        <div class="work-card-type-badge">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          PDF · 23 pg
+        </div>
+        <div class="work-card-info">
+          <span class="work-card-tag">Christie's Real Estate · Collateral</span>
+          <div class="work-card-title">Recruitment Package</div>
+          <div class="work-card-desc">23-page agent recruitment deck designed to attract top-producing real estate talent</div>
+          <button class="work-card-btn">View Package →</button>
+        </div>
+
+      </div>
+
+            <!-- Sales Meeting Reel -->
+            <div class="work-card reveal" onclick="openModal('salesMeeting')">
+              <div class="work-card-thumb-placeholder placeholder-sales">
+                <div class="play-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                </div>
+                <div class="placeholder-label" style="margin-top:0.75rem;">Sales Meeting · Reel</div>
+              </div>
+              <div class="work-card-type-badge">
+                <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+                Reel
+              </div>
+              <div class="work-card-info">
+                <span class="work-card-tag">Christie's Real Estate · Video</span>
+                <div class="work-card-title">Sales Meeting</div>
+                <div class="work-card-desc">Short-form reel produced for Christie's International Real Estate Lone Star</div>
+                <button class="work-card-btn">Watch Reel →</button>
+              </div>
+            </div>
+
+      <!-- Christie's Carpool Reel -->
+      <div class="work-card reveal" onclick="openModal('carpool')">
+        <div class="work-card-thumb-placeholder placeholder-carpool">
+          <div class="play-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--accent)"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          </div>
+          <div class="placeholder-label" style="margin-top:0.75rem;">Christie's Carpool · Reel</div>
+        </div>
+        <div class="work-card-type-badge">
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+          Reel
+        </div>
+        <div class="work-card-info">
+          <span class="work-card-tag">Christie's Real Estate · Video</span>
+          <div class="work-card-title">Christie's Carpool</div>
+          <div class="work-card-desc">Short-form reel produced for Christie's International Real Estate Lone Star</div>
+          <button class="work-card-btn">Watch Reel →</button>
         </div>
       </div>
 
@@ -1310,7 +1405,7 @@
       quantum: {
         tag: "Hook'd Magazine · Layout Design",
         title: 'Quantum Entanglement',
-        desc: '4-page fashion editorial — layout by Joseph Mateo. Photography by Ava Bathurst & Dylan Tse.',
+        desc: '4-page fashion editorial, layout by me. Photography by Ava Bathurst & Dylan Tse.',
         file: 'quantum_entanglement.pdf',
         type: 'pdf'
       },
@@ -1331,9 +1426,37 @@
       robert: {
         tag: "Christie's Real Estate · Social Media",
         title: 'Robert Mexquitic Testimonial',
-        desc: 'Client testimonial graphic — part of a standardized template system adopted by 50+ agents.',
+        desc: 'Client testimonial graphic, part of a standardized template system adopted by 50+ agents.',
         file: 'robert_testimonial.png',
         type: 'image'
+      },
+      salesMeeting: {
+        tag: "Christie's Real Estate · Video",
+        title: 'Sales Meeting',
+        desc: 'Short-form reel produced for Christie\'s International Real Estate Lone Star.',
+        file: 'sales_meeting_reel.mp4',
+        type: 'video'
+      },
+      buyerBook: {
+        tag: "Christie's Real Estate · Print & Digital",
+        title: 'Buyer Book',
+        desc: '36-page buyer\'s guide produced for Christie\'s International Real Estate Lone Star.',
+        file: 'buyer_book_christies.pdf',
+        type: 'pdf'
+      },
+      recruitment: {
+        tag: "Christie's Real Estate · Collateral",
+        title: 'Recruitment Package',
+        desc: '23-page agent recruitment deck designed to attract top-producing real estate talent.',
+        file: 'recruitment_package.pdf',
+        type: 'pdf'
+      },
+      carpool: {
+        tag: "Christie's Real Estate · Video",
+        title: "Christie's Carpool",
+        desc: 'Short-form reel produced for Christie\'s International Real Estate Lone Star.',
+        file: 'christies_carpool_reel.mp4',
+        type: 'video'
       }
     };
 
@@ -1343,10 +1466,15 @@
       document.getElementById('modalTitle').textContent = w.title;
       document.getElementById('modalDesc').textContent = w.desc;
       document.getElementById('modalOpenBtn').href = w.file;
+      document.getElementById('modalOpenBtn').textContent = w.type === 'video' ? 'Open Video ↗' : 'Open File ↗';
       const body = document.getElementById('modalBody');
-      body.innerHTML = w.type === 'image'
-        ? '<img src="' + w.file + '" alt="' + w.title + '" />'
-        : '<iframe src="' + w.file + '"></iframe>';
+      if (w.type === 'image') {
+        body.innerHTML = '<img src="' + w.file + '" alt="' + w.title + '" />';
+      } else if (w.type === 'video') {
+        body.innerHTML = '<video src="' + w.file + '" controls style="width:100%;max-height:72vh;display:block;"></video>';
+      } else {
+        body.innerHTML = '<iframe src="' + w.file + '"></iframe>';
+      }
       document.getElementById('modalOverlay').classList.add('open');
       document.body.style.overflow = 'hidden';
     }
