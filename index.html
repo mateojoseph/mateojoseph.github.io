@@ -541,60 +541,8 @@
     }
     .skill-group:hover .skill-item { color: var(--charcoal); }
 
-    /* ─── LEADERSHIP ─── */
-    #leadership { background: var(--ivory-mid); }
-    .leadership-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2px;
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-    .lead-card {
-      background: var(--ivory);
-      padding: 3.5rem;
-      transition: background 0.4s;
-    }
-    .lead-card:hover { background: var(--greige); }
-    .lead-org {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.6rem;
-      font-weight: 400;
-      letter-spacing: 0.04em;
-      color: var(--ink);
-      margin-bottom: 0.4rem;
-    }
-    .lead-role-title {
-      font-size: 0.62rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-weight: 400;
-      margin-bottom: 1.8rem;
-    }
-    .lead-bullets {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.65rem;
-    }
-    .lead-bullets li {
-      font-size: 0.92rem;
-      color: var(--warm-gray);
-      padding-left: 1.2rem;
-      position: relative;
-      line-height: 1.8;
-      font-weight: 400;
-    }
-    .lead-bullets li::before {
-      content: '—';
-      position: absolute;
-      left: 0;
-      color: var(--gold);
-    }
-
     /* ─── EDUCATION ─── */
-    #education { background: var(--ivory); }
+    #education { background: var(--ivory-mid); }
     .edu-block {
       max-width: 1100px;
       margin: 0 auto;
@@ -894,7 +842,6 @@
       .exp-item { grid-template-columns: 1fr; gap: 1rem; }
       .skills-grid { grid-template-columns: 1fr 1fr; }
       .skill-group { border-right: none; border-bottom: 1px solid var(--border); }
-      .leadership-grid { grid-template-columns: 1fr; }
       .work-grid { grid-template-columns: 1fr; }
       .edu-main { grid-template-columns: 1fr; }
       .edu-main, .coursework { padding: 2rem; }
@@ -1244,37 +1191,6 @@
           <span class="skill-item">Illustrator</span>
           <span class="skill-item">CapCut · Canva · Trello</span>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- LEADERSHIP -->
-  <section id="leadership">
-    <div class="section-mark reveal">
-      <span class="eyebrow">Community</span>
-      <h2>Leadership</h2>
-      <div class="rule"></div>
-    </div>
-    <div class="leadership-grid">
-      <div class="lead-card reveal">
-        <div class="lead-org">UT Austin Esports</div>
-        <div class="lead-role-title">Director of Marketing &amp; Media</div>
-        <ul class="lead-bullets">
-          <li>Managed brand identity and social media presence for UT Austin's umbrella esports organization</li>
-          <li>Coordinated marketing and media coverage across multiple varsity game titles and club teams</li>
-          <li>Produced content, graphics, and promotional material for tournaments and recruitment campaigns</li>
-          <li>Collaborated with university partners and student organizations to amplify outreach</li>
-        </ul>
-      </div>
-      <div class="lead-card reveal">
-        <div class="lead-org">Longhorn Gaming Valorant</div>
-        <div class="lead-role-title">President · Team Manager · Varsity Player</div>
-        <ul class="lead-bullets">
-          <li>Led organizational strategy, recruitment, and operations for a nationally recognized team</li>
-          <li>Grew active membership by 20%, surpassing 1,000 members with a 50% engagement boost</li>
-          <li>Organized tournaments and events drawing 500+ participants per event</li>
-          <li>Represented the program publicly during university outreach and inter-collegiate events</li>
-        </ul>
       </div>
     </div>
   </section>
